@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated HTML Resume</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Generated HTML Resume</h1>
+        <div class="resume">
+            {{ html_content | safe }}
+        </div>
+
+        <form action="/download" method="POST">
+            <input type="hidden" name="html_content" value="{{ html_content }}">
+            <button type="submit">Download HTML Resume</button>
+        </form>
+    </div>
+</body>
+</html>
