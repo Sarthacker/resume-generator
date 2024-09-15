@@ -52,3 +52,4 @@ resume_generator/
 └── README.md                # Project documentation
 # resume-generator
 # resume-generator
+# resume-generator
