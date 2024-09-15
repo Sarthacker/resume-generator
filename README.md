@@ -10,7 +10,7 @@ The objective of this project is to create a web application that:
 3. Sends the extracted resume text to the **Gemini API** to generate professional HTML and CSS code.
 4. Displays the generated resume on the browser and provides an option to download it as an HTML file.
 
-This solution is useful for users who want to quickly convert their LinkedIn resumes into professional web-based resumes with minimal effort.
+
 
 ## Technologies Used
 
@@ -36,20 +36,3 @@ The approach followed to solve the problem is broken down into the following ste
 ### Step 4: Display and Download the HTML Resume
 - The generated HTML content is displayed on the result page.
 - The user is provided an option to **download** the generated HTML resume.
-
-## Project Structure
-
-```bash
-resume_generator/
-│
-├── app.py                  # The main Flask application
-├── templates/               # Folder for HTML templates
-│   ├── index.html           # HTML template for the main page
-│   └── result.html          # HTML template for displaying generated resume
-├── static/                  # Folder for static files like CSS
-│   └── css/
-│       └── styles.css       # Basic CSS styling
-└── README.md                # Project documentation
-# resume-generator
-# resume-generator
-# resume-generator
