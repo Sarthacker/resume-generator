@@ -34,6 +34,7 @@ def generate_resume(resume_text):
 def index():
     if request.method == 'POST':
         # Get API Key
+        print("chk kro ",request.method)
         api_key = request.form['api_key']
         
         # Check if the user uploaded a file
@@ -49,12 +50,14 @@ def index():
         # Extract text from the PDF
         try:
             extracted_text = extract_text_from_pdf(pdf_file)
+            print("chk kro2 ",extracted_text)
         except Exception as e:
             return render_template('index.html', error=f"Error extracting text from PDF: {e}")
         
         # Generate HTML resume using Gemini
         try:
             html_and_css = generate_resume(extracted_text)
+            print("chk kro3 ",html_and_css)
         except Exception as e:
             return render_template('index.html', error=f"Error generating HTML and CSS: {e}")
         
